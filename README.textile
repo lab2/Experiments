@@ -1,6 +1,6 @@
 h1. UML Diagramme
 
-By lab2@codespin.ch. Eine kleines Repository mit hoffentlich nützlichen UML Diagramme. Die verschiedene Diagrammarten sind grundsätzlich auf die _Testing Prozesse_ und deren _Best Practices_ fokussiert 
+By lab2@codespin.ch. Eine kleines Repository mit hoffentlich n&uuml;tzlichen UML Diagramme. Die verschiedene Diagrammarten sind grunds&auml;tzlich auf die _Testing Prozesse_ und deren _Best Practices_ fokussiert 
 
 h2. Editieren der Diagramme
 
