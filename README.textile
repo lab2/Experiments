@@ -5,3 +5,7 @@ By lab2@codespin.ch. Eine kleines Repository mit hoffentlich n&uuml;tzlichen UML
 h2. Editieren der Diagramme
 
 Um die Diagramme zu editieren wird "UMLet 11.3":http://www.umlet.com/ vorausgesetzt
+
+h2. Ablageort der _Custom palettes_
+
+Die _Custom_ Diagramme im Verzeichnis %UMLET_HOME%/palettes einf&uuml;gen
