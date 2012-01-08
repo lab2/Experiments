@@ -22,7 +22,7 @@ drawLine(width/2, h*2, width/2+8, h*2+8);
 int th = textHeight();
 int n  = textlines.size();
 int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
-int tw, x;
+int tw;
 
 for (String textline : textlines) 
 {
