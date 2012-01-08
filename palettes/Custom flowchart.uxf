@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>24</y>
+      <w>73</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ciao</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z = 15;
+
+Polygon p = new Polygon();
+p.addPoint(0,0);
+p.addPoint(width-z, 0);
+p.addPoint(width,height/2);
+p.addPoint(width-z,height);
+p.addPoint(0,height);
+drawPolygon(p);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height /2) - ((th * n) /3) + (int)(th * 0.55);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>96</x>
+      <y>24</y>
+      <w>97</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Process</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z = 15;
+
+Polygon p = new Polygon();
+p.addPoint(0,0);
+p.addPoint(width-z, 0);
+p.addPoint(width,height/2);
+p.addPoint(width-z,height);;
+p.addPoint(0,height);
+p.addPoint(z,height/2);
+drawPolygon(p);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height /2) - ((th * n) /3) + (int)(th * 0.55);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>200</x>
+      <y>24</y>
+      <w>97</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes>Node
+</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z=10;
+
+drawRectangle(0,z, width-z, height-z);
+drawLine(z,0,0,z);
+drawLine(width-z,z,width,0);
+drawLine(width-z,height,width,height-z);
+drawLine(z, 0, width, 0);
+drawLine(width, 0, width, height-z);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>216</y>
+      <w>89</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes>Anforderungs-
+definition</panel_attributes>
+    <additional_attributes/>
+    <custom_code>drawRectangle(0,0, width, height);
+int z=9;
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>64</y>
+      <w>89</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Ipotenusa</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z=5;
+
+drawRectangle(0, 0, width, height);
+drawLineVertical(z+1);
+drawLineVertical(width-z);
+
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>168</y>
+      <w>89</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>Ipotenusa</panel_attributes>
+    <additional_attributes/>
+    <custom_code>double calc=0, w;
+
+double z=30;
+double b=0;
+
+calc = z*z+height*height;
+w = Math.round(Math.sqrt(calc));
+
+b = Math.round(w*0.30);
+
+drawLine((int)b,0,0,height);
+drawLine((int)b,0,width,0);
+drawLine(0,height,width-(int)b,height);
+drawLine(width-(int)b,height,width,0);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>120</x>
+      <y>64</y>
+      <w>49</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Merge</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z = 12;
+
+//top
+drawLine(0,0, width-z,0);
+//left
+drawLine(0,0, 0, height);
+//botton
+drawLine(0, height, width, height);
+//right
+drawLine(width, z, width, height);
+//ear
+drawLine(width-z, 0, width, z);
+//inline
+drawLine(width-z, 0, width-z, z);
+drawLine(width-z, z, width, z);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height /2) - ((th * n) /3) + (int)(th * 0.75);
+int tw, x;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>200</x>
+      <y>72</y>
+      <w>97</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes>System Test
+bg=white</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z=8, t=3;
+
+drawRectangle(0,0, width-t+1, height-t+1);
+
+setLineThickness(t);
+
+drawLine(z, height, width, height);
+drawLine(width, height, width, z);
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.85);
+int tw;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>112</y>
+      <w>89</w>
+      <h>41</h>
+    </coordinates>
+    <panel_attributes>Manual input</panel_attributes>
+    <additional_attributes/>
+    <custom_code>Polygon p = new Polygon();
+
+p.addPoint(0, height);
+p.addPoint(width, height);
+p.addPoint(width, 0);
+p.addPoint(0, height/3);
+
+drawPolygon(p);
+
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = (height / 2) - ((th * n) / 2) + (int)(th * 0.95);
+int tw;
+
+for (String textline : textlines) 
+{
+	printCenter(textline, y);
+	y += th;
+}</custom_code>
+  </element>
+</diagram>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>16</y>
+      <w>33</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+    <custom_code>Polygon poly = new Polygon();
+poly.addPoint(width / 2, 0);
+poly.addPoint(width, height / 2);
+poly.addPoint(width / 2, height);
+poly.addPoint(0, height / 2);   
+drawPolygon(poly);
+allowResize(false);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>56</x>
+      <y>16</y>
+      <w>33</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+    <custom_code>int thick=4;
+
+Polygon poly = new Polygon();
+poly.addPoint(width / 2, 0);
+poly.addPoint(width, height / 2);
+poly.addPoint(width / 2, height);
+poly.addPoint(0, height / 2);   
+drawPolygon(poly);
+
+int zy = height/4;
+int zx = width/4;
+float tj = (float)thick*zoom;
+setLineThickness((int)tj);
+drawLine(width/2, zy, width/2, height-zy);
+drawLine(zx, height/2, width-zx, height/2);
+
+allowResize(false);</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>96</x>
+      <y>16</y>
+      <w>33</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>bg=#FFCC00</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int thick=4;
+
+Polygon poly = new Polygon();
+poly.addPoint(width / 2, 0);
+poly.addPoint(width, height / 2);
+poly.addPoint(width / 2, height);
+poly.addPoint(0, height / 2);   
+drawPolygon(poly);
+
+
+float tj = (float)thick*zoom;
+setLineThickness((int)tj);
+drawEllipse(width / 2, height / 2, width / 4, height / 4);
+
+allowResize(false);
+</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>136</x>
+      <y>16</y>
+      <w>33</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>
+</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int thick = 4;
+float tj = (float)thick*zoom;
+setLineThickness((int)tj);
+drawEllipse(width / 2, height / 2, width / 4, height / 4);
+
+allowResize(false);</custom_code>
+  </element>
+</diagram>
