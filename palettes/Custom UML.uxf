@@ -4,10 +4,65 @@
   <element>
     <type>CustomElementImpl</type>
     <coordinates>
-      <x>24</x>
-      <y>16</y>
+      <x>112</x>
+      <y>24</y>
+      <w>97</w>
+      <h>73</h>
+    </coordinates>
+    <panel_attributes>bg=gray
+Staat</panel_attributes>
+    <additional_attributes/>
+    <custom_code>int z = 15;
+
+/*
+Polygon p = new Polygon();
+p.addPoint(0,0);
+p.addPoint(width-z, 0);
+p.addPoint(width,height/2);
+p.addPoint(width-z,height);
+p.addPoint(0,height);
+drawPolygon(p);
+*/
+
+
+Polygon p1 = new Polygon();
+p1.addPoint(z, 0);
+p1.addPoint(width, 0);
+p1.addPoint(width-z, z);
+p1.addPoint(0, z);
+drawPolygon(p1);
+
+Polygon p2 = new Polygon();
+p2.addPoint(width, 0);
+p2.addPoint(width, height-z);
+p2.addPoint(width-z, height);
+p2.addPoint(width-z, z);
+drawPolygon(p2);
+
+drawLine(0, z, 0, height);
+drawLine(0, height, width-z, height);
+
+
+int th = textHeight();
+int n  = textlines.size();
+int y  = 35;
+int x  = (width / 8) + (int)(th * 0.05);
+int tw;
+
+for (String textline : textlines) 
+{
+	print(textline, x, y);
+	y += th;
+}
+</custom_code>
+  </element>
+  <element>
+    <type>CustomElementImpl</type>
+    <coordinates>
+      <x>16</x>
+      <y>32</y>
       <w>81</w>
-      <h>81</h>
+      <h>65</h>
     </coordinates>
     <panel_attributes>Test Manager</panel_attributes>
     <additional_attributes/>
@@ -26,7 +81,7 @@ int tw;
 
 for (String textline : textlines) 
 {
-	printCenter(textline, y);
+	printCenter(textline, h*4);
 	y += th;
 }
 
