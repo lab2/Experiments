@@ -1,0 +1,15 @@
+#!/bin/bash
+# get NASA pic of the day and store it on DLNA
+
+addr="https://apod.nasa.gov/apod/"
+content=$(wget $addr -q -O -)
+img=$(echo "$content" | grep -m1 "IMG SRC" | head -1)
+file=$(echo "$img" | awk -F"\"" '{print $2}')
+check=${file##*/}
+if [ ! -z "$check"]; then
+  if [ ! -f "/media/DLNA/NASA/$check"]; then
+    wget -Nq "https://apod.nasa.gov/apod/$file"
+    file=${file##*/}
+    cp $file /media/DLNA/NASA && rm $file
+  fi
+fi

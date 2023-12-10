@@ -1,0 +1,16 @@
+#!/bin/bash
+# get espresso podcast and store it on DLNA
+
+addr="https://www.srf.ch/feed/podcast/sd/7d9473ef-bb35-44a7-88df-6bc334053661.xml"
+content=$(wget $addr -q -O -)
+mp3=$(echo "$content" | grep -m1 "url=" | head -1)
+file=$(echo "$mp3" | awk -F"\"" '{print $6}')
+check=${file##*/}
+if [ ! -f "/media/DLNA/SRG-Espresso/$check" ]; then
+  wget -Nq $file
+  file=${file##*/}
+  new=${file##*/}
+  new=${new%'?'*}
+  mv $file $new
+  cp $new /media/DLNA/SRG-Espresso && rm $new
+fi
