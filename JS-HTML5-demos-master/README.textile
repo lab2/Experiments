@@ -1,0 +1,12 @@
+h1. HTML5 and JS source code repository
+
+A funny code repository with html5 canvas and javascript experiments. You are free to use or modify the source code. 
+
+h2. Compatibility
+
+Tested with:
+
+* Firefox 9.0.1
+* Chrome 16.0.912.75 (Build 116452)
+* Internet Explorer 9.0.8112.16421 (64-bit Edition)
+* Android Firefox 68.0.2

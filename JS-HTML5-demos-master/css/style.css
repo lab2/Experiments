@@ -1,0 +1,17 @@
+body { margin:0px; overflow: hidden; }
+@font-face { 
+	font-family: Munro; 
+	src: url('../fonts/munro_small-webfont.eot'); 
+	src: url('../fonts/munro_small-webfont.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/munro_small-webfont.woff') format('woff'), 
+	url('../fonts/munro_small.ttf')  format('truetype'), 
+	url('../fonts/munro_small-webfont#svgFontName') format('svg'); 
+}
+@font-face { 
+	font-family: Visitor; 
+	src: url('../fonts/visitor1-webfont.eot'); 
+	src: url('../fonts/visitor1-webfont.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/visitor1-webfont.woff') format('woff'), 
+	url('../fonts/visitor1-webfont.ttf')  format('truetype'), 
+	url('../fonts/visitor1-webfont#svgFontName') format('svg'); 
+}
