@@ -1,0 +1,18 @@
+.tabcontent {
+	background: #EFEFEF;
+	width: 600px;
+	padding: 8px;
+}
+
+.tabsubcontent {
+	background: #FFF;
+	padding: 8px;
+}
+
+.tabtitle {
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+	padding: 4px;
+	background: #FFF;
+}

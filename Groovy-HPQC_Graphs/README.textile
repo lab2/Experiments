@@ -1,0 +1,5 @@
+h1. Groovy HP Quality Center Graphs
+
+h2. Description
+
+Automatic extraction and generation of defects (and testcases) graphs in groovy based on data in HP Quality Center

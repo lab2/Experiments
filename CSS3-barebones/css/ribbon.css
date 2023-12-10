@@ -1,0 +1,38 @@
+.lab {
+	width: 500px;
+	background: #FFF;
+}
+
+.txt {
+	padding: 10px;
+}
+
+.ribbon {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	background: -webkit-radial-gradient(top, #FFB79E, #E82014);
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(top, #0AC9FF, #0076AD);
+	/* IE 10+ */
+	background: -ms-radial-gradient(top, #0AC9FF, #0076AD);
+	/* Opera 11.10+ */
+	background: -o-radial-gradient(top, #0AC9FF, #0076AD);
+	/* W3C Standard */
+	background: radial-gradient(top, #0AC9FF, #0076AD);
+	text-align: left;
+	padding: 8px;
+	margin: -1em -1em 0 -1em;
+}
+
+.triangle {
+	border-style: solid;
+	border-color: #C3C3C3 #C3C3C3 transparent transparent;
+	border-width: .25em .5em .25em .5em;
+	width: 1em;
+	height: .5em;
+	margin-left: -1em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}

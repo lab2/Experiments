@@ -1,0 +1,21 @@
+.lab {
+	width: 700px;
+}
+
+a.tooltip {
+	text-decoration: none;
+}
+
+a.tooltip span {
+	display: none;
+}
+
+a.tooltip:hover span {
+	display: inline;
+	position: absolute;
+	background: #333;
+	color: #FFF;
+	padding: 6px;
+	margin-left: 10px;
+	margin-top: 10px;
+}

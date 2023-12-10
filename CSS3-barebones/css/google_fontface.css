@@ -1,0 +1,20 @@
+.lab {
+	width: 900px;
+	line-height: 40px;
+}
+
+.special1 {
+	font-size: 24px;
+	font-family: 'open sans', arial, sans-serif;
+	font-weight: bold;
+}
+
+.special2 {
+	font-size: 24px;
+	font-family: 'Telex', sans-serif;
+}
+
+.special3 {
+	font-size: 24px;
+	font-family: 'Lilita One', cursive;
+}

@@ -1,0 +1,25 @@
+.lab {
+	color: #FFF;
+	font-size: 19px;
+	font-weight: bold;
+	margin: 0px;
+	line-height: 24px;
+	text-align: center;
+	padding: 40px;
+
+	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+	/* background:-webkit-gradient(radial, center center, 80, center center, 400, from(#2F2727), to(#1a82f7)); */
+	background: -webkit-radial-gradient(top, #B2C9FF, #0076AD);
+	
+	/* Firefox 3.6+ */
+	background: -moz-radial-gradient(top, #B2C9FF, #0076AD);
+	
+	/* IE 10+ */
+	background: -ms-radial-gradient(top, #B2C9FF, #0076AD);
+	
+	/* Opera 11.10+ */
+	background: -o-radial-gradient(top, #B2C9FF, #0076AD);
+	
+	/* W3C Standard */
+	background: radial-gradient(top, #B2C9FF, #0076AD);
+}

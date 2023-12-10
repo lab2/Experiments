@@ -1,0 +1,24 @@
+body {
+	font: 13px arial, sans-serif;
+}
+
+.panel {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	transition: width 1s, height 1s;
+	-moz-transition: width 1s, height 1s, -moz-transform 1s;
+	/* Firefox 4 */
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+	/* Safari and Chrome */
+	-o-transition: width 1s, height 1s, -o-transform 1s; /* Opera */
+}
+
+.panel:hover {
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-moz-transform: rotate(180deg); /* Firefox 4 */
+	-webkit-transform: rotate(180deg); /* Safari and Chrome */
+	-o-transform: rotate(180deg); /* Opera */
+}

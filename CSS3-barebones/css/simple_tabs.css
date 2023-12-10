@@ -1,0 +1,41 @@
+.metalist {
+	font: 14px Arial, Helvetica;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #D0CCC9;
+	width: 400px;
+}
+
+.metalist a {
+	text-decoration: none;
+	color: #B38A88;
+	font-weight: bold;
+}
+
+.metalist li {
+	display: inline;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	background: #EFEFF1;
+	margin-right: 2px;
+	border-top: 1px solid #D0CCC9;
+	border-right: 1px solid #D0CCC9;
+	border-left: 1px solid #D0CCC9;
+}
+
+.metalist li:hover {
+	background: #FFF;
+}
+
+.metalist .selected {
+	background: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+.metalist .selected a {
+	color: #5E95F0;
+}

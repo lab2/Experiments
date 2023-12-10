@@ -1,0 +1,14 @@
+h1. CSS3 barebones
+
+CSS3 useful techniques, effects and snippets. 
+
+h2. Tested
+
+Tested in following browsers:
+
+* Google Chrome (16.0.912.77)
+* Internet Explorer 9.0.8112.16421 (64-bit Edition)
+
+h2. Limitations
+
+The gradients and ribbon experimentes do not work in IE so far
