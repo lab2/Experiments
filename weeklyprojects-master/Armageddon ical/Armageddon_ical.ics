@@ -1,0 +1,60 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:Armageddon ical
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20190720T132110Z
+UID:20190720T132110Z-628488222@marudot.com
+DTSTART;VALUE=DATE:20190609
+DTEND;VALUE=DATE:20190610
+SUMMARY:The End of the World!
+URL:https%3A%2F%2Frcwilkinson.com%2F2019%2F04%2F01%2Fjune-19-2019-the-end-of-the-world-again%2F
+DESCRIPTION:Ronald Weinland\, a serial doomsday crackpot who incorrectly predicted the world would end in 2011\, 2012\, and then 2013\, now says it will definitely happen on June 9\, 2019
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190720T132110Z
+UID:20190720T132110Z-181969183
+DTSTART;VALUE=DATE:20191221
+DTEND;VALUE=DATE:20191222
+SUMMARY:Mayan’s prediction of an apocalypse
+URL:https%3A%2F%2Fwww.express.co.uk%2Fnews%2Fweird%2F1066065%2Fend-of-the-world-2019-apocalypse-bible-prophecy-jesus-return
+DESCRIPTION:Author David Montaigne insists we were wrong about the Mayan’s prediction of an apocalypse in 2012\, and said the date just acted as a start point of seven years of tribulation – as spoken about in the Bible. Mr Montaigne says the end of the world will actually beginning on December 21 this year – exactly seven years after the Maya calendar predicted the end of the world.
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190720T132110Z
+UID:20190720T132110Z-130852144
+DTSTART;VALUE=DATE:20290413
+DTEND;VALUE=DATE:20290414
+SUMMARY:Apophis asteroid
+URL:https%3A%2F%2Fwww.express.co.uk%2Fnews%2Fscience%2F821944%2Fasteroid-impact-earth-nasa-apophis
+DESCRIPTION:Astronomers have calculated the Apophis asteroid will speed past Earth on April 13\, 2029\, at just 18\,600 miles away – a hair’s width in astronomical terms. To put that into perspective\, the moon is 238\,900 miles away.\n\nDue to the close proximity in which the giant space rock will pass\, scientists believe the near-miss will alter the asteroid’s orbit\, which could lead it to collide with Earth in the future.\n\nIf the 27 billion kg asteroid were to hit Earth\, scientists calculate that it would leave a crater over a mile wide and a staggering 518 metres deep.
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20190720T132110Z
+UID:20190720T132110Z-648386301
+DTSTART;VALUE=DATE:20470630
+DTEND;VALUE=DATE:20470701
+SUMMARY:Asteroid 2017 YZ1
+URL:https%3A%2F%2Fwww.salon.com%2F2018%2F01%2F14%2Fthe-asteroids-most-likely-to-hit-earth%2F
+DESCRIPTION:This 1\,000-foot-wide asteroid has a non-zero chance (0.00015 percent) of hitting Earth on June 30\, 2047.
+END:VEVENT
+END:VCALENDAR
